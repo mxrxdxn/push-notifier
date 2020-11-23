@@ -1,0 +1,34 @@
+{
+    "name": "mxrxdxn/push-notifier",
+    "description": "An easy library to send push notifications via APNS and FCM.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ron Marsden",
+            "email": "rm@maxwebsolutions.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "PushNotifier\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PushNotifier\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "lcobucci/jwt": "3.3.3",
+        "kreait/firebase-php": "^5.0",
+        "illuminate/collections": "^8.0",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^5.1",
+        "vlucas/phpdotenv": "^5.1"
+    }
+}
